@@ -1,0 +1,26 @@
+[user]
+	name = Haochi Chen
+	email = haochi.chen@gmail.com
+
+[core]
+	excludesfile = ~/.gitignore
+
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+
+[alias]
+  st = status
+  cm = commit -m
+  ca = commit --amend -m
+
+[push]
+	default = current
+
+[merge]
+	tool = vimdiff
+
+[mergetool "vimdiff"]
+	cmd = vim -d "$LOCAL" "$MERGED" "$REMOTE"
+	trustExitCode = true
